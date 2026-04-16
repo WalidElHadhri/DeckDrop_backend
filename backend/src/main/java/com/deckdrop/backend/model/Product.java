@@ -12,6 +12,8 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Table(name = "products")
 public class Product {
@@ -34,7 +36,8 @@ public class Product {
 
     @Column(nullable = false)
     private boolean preorder;
-
+    
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate releaseDate;
 
     @Column(nullable = false)

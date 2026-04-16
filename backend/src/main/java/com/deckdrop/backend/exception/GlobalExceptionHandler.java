@@ -36,17 +36,18 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(body);
     }
 
+    @ExceptionHandler(ConflictException.class)
+    public ResponseEntity<Map<String, Object>> handleConflict(ConflictException ex) {
+        return ResponseEntity.status(HttpStatus.CONFLICT)
+                .body(errorBody(HttpStatus.CONFLICT, ex.getMessage()));
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGeneric(Exception ex) {
         log.error("Unhandled exception", ex);
 
-        String detailedMessage = ex.getMessage();
-        if (detailedMessage == null || detailedMessage.isBlank()) {
-            detailedMessage = ex.getClass().getSimpleName();
-        }
-
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(errorBody(HttpStatus.INTERNAL_SERVER_ERROR, detailedMessage));
+                .body(errorBody(HttpStatus.INTERNAL_SERVER_ERROR, "Unexpected server error"));
     }
 
     private Map<String, Object> errorBody(HttpStatus status, String message) {
