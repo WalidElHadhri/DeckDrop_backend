@@ -1,0 +1,434 @@
+AR - DECKDROP Website Project Description (Full Specification)
+1. Project Overview
+Website Name: AR - DECKDROP
+ Domain: AR - DECKDROP.de
+ Type of Website: E-Commerce Online Shop (Trading Card Games + Accessories + Anime/Gaming Merchandise)
+ Target Market: Germany and Europe
+ Languages: German and English (Language switch is mandatory)
+AR - DECKDROP is an online store focused on selling sealed Trading Card Game (TCG) products and related merchandise. The store will mainly offer products for popular card games such as Pokémon TCG, Yu-Gi-Oh! TCG, and One Piece TCG. Additionally, the store will sell TCG accessories, anime figures, and gaming/anime merchandise.
+The main goal of the website is to provide a modern, premium, user-friendly shopping experience, with a clean and luxurious design that is colorful and matches the brand logo style.
+
+2. Website Goals and Functions
+The website should allow customers to:
+Browse products easily by category
+Search products quickly using a search bar
+View product details with clear descriptions and images
+Add products to wishlist/favorites
+Add products to cart and checkout smoothly
+Place orders as guest users or registered users
+Create an account, manage addresses, and view order history
+Track orders using tracking links (DHL)
+Place and pay for preorders before release date
+Read blog/news posts about upcoming products and preorders
+The website must be professional and trustworthy to support online payments and build customer confidence.
+
+3. Target Audience
+The target audience includes:
+TCG players and collectors (Pokémon, Yu-Gi-Oh!, One Piece)
+Anime and gaming fans
+Customers mainly located in Germany, but also across Europe
+People interested in sealed products, collectible items, and accessories
+
+4. Product Categories
+The main product categories of the store are:
+Pokémon TCG
+Yu-Gi-Oh! TCG
+One Piece TCG
+TCG Accessories (sleeves, binders, deck boxes, playmats, etc.)
+Figures (anime and gaming figures)
+Merchandise (anime/gaming merch such as posters, clothing, collectibles)
+Each category should have its own page and subcategory structure if needed.
+
+5. Design and Branding Requirements
+Overall Style
+The design should look:
+Modern
+Premium / Luxury
+Colorful (bright and joyful)
+Clean and professional
+Inspired by the logo color palette
+Colors and Fonts
+Main colors should match the AR - DECKDROP logo colors.
+The font should be modern, clean, and easy to read.
+No dark mode is needed.
+The website should have a bright background and a lively shopping atmosphere.
+Layout Style
+Product cards should look clean and premium.
+Website should feel like a modern online store with professional UI.
+Smooth animations/transitions are recommended but not required.
+Website should be fully responsive (desktop, tablet, mobile).
+
+6. Website Structure and Pages
+6.1 Home Page
+The homepage should include the following sections:
+Header / Navigation Bar
+Hero Banner (Main Slider Section)
+Promotional banner for new releases, best deals, or preorder announcements
+Buttons like “Shop Now” / “View Preorders”
+Featured Categories Section
+Pokémon TCG
+Yu-Gi-Oh! TCG
+One Piece TCG
+Accessories
+Figures
+Merchandise
+Hot Products / Trending Section
+Best-selling items
+Products currently popular
+New Arrivals Section
+Recently added products
+Preorders Section
+Upcoming products with release dates
+Clear “Preorder Now” buttons
+Recommended / Featured Products Section
+Manually chosen items or system-based suggestions
+Newsletter Signup Section
+“Get updates about restocks and preorders”
+Email input field and subscribe button
+Instagram/Social Media Feed Section
+Display recent posts or a social media preview
+Footer Section
+
+6.2 Shop / Products Page
+The Shop page should display all products with:
+Grid view product layout
+Sorting options (recommended):
+Newest
+Price low to high
+Price high to low
+Best selling
+Filters should include:
+Category filter (Pokémon, Yu-Gi-Oh, One Piece, etc.)
+Price filter
+Availability filter (in stock / preorder / out of stock)
+The Shop page should allow customers to browse smoothly with pagination or infinite scrolling.
+
+6.3 Category Pages
+Each category should have its own page, such as:
+Pokémon TCG category page
+Yu-Gi-Oh! TCG category page
+One Piece TCG category page
+Accessories category page
+Figures category page
+Merchandise category page
+Each category page should show:
+Category banner or title
+Product grid
+Filters and sorting
+Clear navigation
+
+6.4 Product Detail Page
+The product detail page must include:
+Product name
+Product images gallery (multiple pictures)
+Price (VAT included)
+Stock status (In Stock / Out of Stock / Preorder)
+Quantity selector
+Add to Cart button
+Add to Wishlist button
+Short product highlights
+Full product description
+Release date (important for preorders)
+Shipping estimation information
+Payment method icons (PayPal, Klarna, Visa, MasterCard, Bank Transfer)
+Related products section (“You may also like”)
+Reviews and ratings (optional but included)
+For preorder products:
+Clear “Preorder” label
+Release date clearly displayed
+Preorder payment required immediately
+
+6.5 Wishlist / Favorites Page
+Wishlist page should allow customers to:
+View saved products
+Remove products
+Add wishlist items directly to cart
+Wishlist should work for:
+Logged-in users (saved permanently)
+Guest users (saved temporarily in browser)
+
+6.6 Cart Page
+The cart page should display:
+List of added products
+Product quantity editing (+/-)
+Remove product option
+Subtotal calculation
+VAT note
+Estimated shipping note
+Proceed to checkout button
+Cart should be accessible from the header at all times.
+
+6.7 Checkout Page
+Checkout should be simple and user-friendly.
+Customers can checkout as:
+Guest user
+Registered account user
+Checkout steps should include:
+Customer Information
+Name
+Email
+Phone (optional)
+Billing address
+Shipping address
+Shipping Method
+DHL delivery option
+Shipping cost (configurable later)
+Payment Method Selection
+PayPal
+Klarna
+Visa
+MasterCard
+Bank transfer
+Order Summary
+Product list
+Quantity
+Total price
+VAT included
+Shipping cost
+Place Order Button
+After checkout:
+Customer receives confirmation message on screen
+Customer receives an order confirmation email (German only for now)
+
+6.8 Account / Login / Register Page
+Customers should be able to:
+Register an account
+Login/logout
+Reset password via email
+Manage personal profile
+Account dashboard should include:
+Order history
+Saved addresses
+Wishlist
+Order tracking link (if available)
+Account details editing
+
+6.9 About Us Page
+This page should include:
+AR - DECKDROP brand story
+What the shop offers
+Focus on quality and authenticity
+Trust-building elements (secure payment, shipping, etc.)
+
+6.10 Contact Page
+The contact page should include:
+Contact form (name, email, subject, message)
+Customer service email
+Social media links
+Optional: FAQ link
+
+6.11 Shipping & Delivery Page
+This page should include:
+Shipping countries (Germany and Europe)
+DHL as main shipping provider
+Estimated delivery times
+Shipping cost table (to be added later)
+Packaging and safety information
+
+6.12 Returns & Refund Policy Page
+This page should include:
+Return rules
+Refund conditions
+Customer instructions for returns
+Return period
+Contact information for support
+
+6.13 Terms & Conditions Page
+Legal terms of using the shop and buying products.
+
+6.14 Privacy Policy Page (GDPR)
+Must include:
+Data processing details
+Cookies and tracking
+Analytics and pixel tracking information
+Customer rights under GDPR
+
+6.15 Impressum Page (Mandatory for Germany)
+This page must exist and contain the legal required information.
+
+6.16 Blog / News Page
+The blog/news section is used for:
+Preorder announcements
+Upcoming product release news
+Restock announcements
+Shop updates
+Blog should support:
+Blog post list view
+Blog post detail view
+Post categories (Pokémon / Yu-Gi-Oh / One Piece / General)
+Blog images
+
+7. Header Requirements (Top Navigation)
+The header must always be visible and include:
+AR - DECKDROP logo on the left side (clickable, returns to homepage)
+Search bar next to logo (important)
+Categories dropdown menu
+Navigation links (Home, Shop, Blog, About, Contact)
+Wishlist icon
+Account icon
+Cart icon
+Language switch button (German / English)
+The header should look modern, clean, and premium.
+
+8. Footer Requirements
+The footer should include:
+Footer Sections
+Customer Service Links
+Shipping & Delivery
+Returns & Refund Policy
+Contact
+FAQ (optional)
+Legal Links
+Terms & Conditions
+Privacy Policy
+Impressum
+Social Media Links
+Instagram
+TikTok
+YouTube (optional)
+Facebook (optional)
+Newsletter Signup
+Email field + subscribe button
+Payment Icons
+PayPal
+Klarna
+Visa
+MasterCard
+Bank transfer
+Copyright
+“© AR - DECKDROP - All rights reserved.”
+Contact Information
+Support email
+Business location (optional)
+
+9. Customer Journey / User Experience Process
+9.1 Browsing Products
+Customers can browse products through:
+Homepage sections (Hot Products, New Arrivals, Preorders)
+Category pages
+Search bar
+Shop page filters
+Filters help customers find products quickly.
+
+9.2 Adding to Wishlist
+Customers can add items to wishlist:
+Directly from product cards
+From product detail page
+Wishlist should be accessible from the header.
+
+9.3 Adding to Cart
+Customers can add products to cart from:
+Product detail page
+Wishlist page
+Cart should update instantly and show item count in the header.
+
+9.4 Checkout Process
+Customer clicks checkout and completes:
+Shipping address details
+DHL shipping method selection
+Payment method selection
+Confirmation of total price
+Order placement
+After order completion:
+Confirmation page shown
+Order confirmation email sent
+
+9.5 Preorder Process
+Preorder products should be clearly labeled.
+ Customer can preorder by:
+Adding preorder product to cart
+Paying immediately at checkout
+Preorder products should show:
+Release date
+Preorder status
+Preorder payment required immediately
+
+9.6 Order Tracking
+After shipping, customer should receive:
+Tracking number
+DHL tracking link in account page or email
+
+10. Admin System / Backend Requirements
+The website must include an admin system where the shop owner can:
+Product Management
+Add/edit/delete products
+Upload product images
+Assign products to categories
+Add stock quantity
+Mark products as preorder or normal stock
+Set release date for preorder items
+Order Management
+View incoming orders
+Change order status (Processing / Shipped / Completed / Cancelled)
+Add tracking number
+Generate invoice details
+Manage payment confirmation for bank transfers
+Stock Management
+Automatically reduce stock after purchase
+Show out-of-stock status
+Discount & Promotions
+Create discount codes
+Set percentage or fixed discount
+Set validity dates
+Blog/News Management
+Create blog posts
+Add images
+Assign categories (Pokemon/YGO/One Piece/General)
+
+11. Payment and Shipping Requirements
+Payment Methods
+The website should support:
+PayPal
+Klarna
+Visa
+MasterCard
+Bank transfer
+Shipping
+DHL as shipping provider
+Shipping costs will be configured later
+Shipping zones: Germany + Europe
+
+12. Legal Requirements (Germany & EU)
+The website must follow German and EU online shop requirements:
+Impressum page is mandatory
+GDPR Privacy Policy page is mandatory
+Cookie consent banner is mandatory
+Customers must accept Terms & Conditions before checkout
+VAT included must be clearly displayed
+
+13. Cookie Banner and Tracking
+The website should include:
+GDPR-compliant cookie banner
+Option to accept/reject cookies
+Google Analytics integration
+Meta Pixel integration (Facebook/Instagram Ads)
+
+14. Language System (German + English)
+The website must support two languages:
+German
+English
+Language switch should be available in the header.
+For now:
+Order confirmation emails only in German
+
+15. Technical Development Notes
+The website will be developed using:
+Frontend: React
+Backend: Java Spring Boot 
+Database system for products, users, orders, and blog posts
+The developer will build and test everything on Vercel.
+The website must be secure, stable, and scalable for future product expansion.
+
+16. Future Improvements (Optional Later)
+Features that may be added later:
+Loyalty points system
+Customer reviews improvements
+More advanced filtering
+More shipping providers
+Multi-currency payments
+Automated invoice PDF downloads
+Email system in English as well
+
+Final Result Expectations
+The final website should look premium, modern, colorful, and trustworthy, while being easy to navigate and fast. The shop should feel like a high-quality professional brand store for TCG collectors and anime/gaming fans in Germany and Europe.
+
