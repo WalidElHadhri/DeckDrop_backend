@@ -1,0 +1,3 @@
+ALTER TABLE products ADD COLUMN category VARCHAR(100);
+ALTER TABLE products ADD COLUMN subcategory VARCHAR(100);
+ALTER TABLE products ADD COLUMN image_url TEXT;

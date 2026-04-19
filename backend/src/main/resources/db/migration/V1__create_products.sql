@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS products (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    description VARCHAR(2000),
+    price NUMERIC(10,2) NOT NULL,
+    currency VARCHAR(3) NOT NULL,
+    preorder BOOLEAN NOT NULL DEFAULT FALSE,
+    release_date DATE,
+    stock_quantity INTEGER NOT NULL DEFAULT 0,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL
+);
