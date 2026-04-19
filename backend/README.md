@@ -31,6 +31,7 @@ From this `backend` folder:
 - `GET /api/health`
 - `GET /api/products`
 - `GET /api/products/{id}`
+- `GET /api/users` (ADMIN only)
 - `POST /api/products` (ADMIN only)
 - `PUT /api/products/{id}` (ADMIN only)
 - `DELETE /api/products/{id}` (ADMIN only)

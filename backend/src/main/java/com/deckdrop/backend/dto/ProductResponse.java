@@ -13,7 +13,12 @@ public record ProductResponse(
         boolean preorder,
         LocalDate releaseDate,
         Integer stockQuantity,
+        CategoryDto category,
+        SubcategoryDto subcategory,
+        java.util.List<String> images,
         Instant createdAt,
         Instant updatedAt
 ) {
+    public record CategoryDto(Long id, String name) {}
+    public record SubcategoryDto(Long id, String name) {}
 }

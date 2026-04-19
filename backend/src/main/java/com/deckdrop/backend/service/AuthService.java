@@ -46,13 +46,17 @@ public class AuthService {
         AppUser user = new AppUser();
         user.setEmail(email);
         user.setPasswordHash(passwordEncoder.encode(request.password()));
+        user.setFirstName(request.firstName());
+        user.setLastName(request.lastName());
+        user.setPhoneNumber(request.phoneNumber());
+        user.setAddress(request.address());
         user.setRole(appUserRepository.count() == 0 ? Role.ADMIN : Role.USER);
         appUserRepository.save(user);
 
         UserDetails userDetails = customUserDetailsService.loadUserByUsername(user.getEmail());
         String token = jwtService.generateToken(userDetails);
 
-        return new AuthResponse(token, "Bearer", user.getEmail(), user.getRole().name());
+        return new AuthResponse(token, "Bearer", user.getEmail(), user.getRole().name(), user.getFirstName(), user.getLastName());
     }
 
     public AuthResponse login(AuthLoginRequest request) {
@@ -65,10 +69,8 @@ public class AuthService {
         UserDetails userDetails = customUserDetailsService.loadUserByUsername(email);
         String token = jwtService.generateToken(userDetails);
 
-        String role = appUserRepository.findByEmail(email)
-                .map(user -> user.getRole().name())
-                .orElse("USER");
+        AppUser user = appUserRepository.findByEmail(email).orElseThrow();
 
-        return new AuthResponse(token, "Bearer", email, role);
+        return new AuthResponse(token, "Bearer", email, user.getRole().name(), user.getFirstName(), user.getLastName());
     }
 }

@@ -15,6 +15,9 @@ public record ProductRequest(
         @NotBlank @Size(min = 3, max = 3) String currency,
         boolean preorder,
         LocalDate releaseDate,
-        @NotNull @Min(0) Integer stockQuantity
+        @NotNull @Min(0) Integer stockQuantity,
+        Long categoryId,
+        Long subcategoryId,
+        java.util.List<String> images
 ) {
 }

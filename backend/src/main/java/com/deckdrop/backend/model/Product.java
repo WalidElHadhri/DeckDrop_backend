@@ -12,6 +12,13 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.time.LocalDate;
 
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.CollectionTable;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
@@ -36,12 +43,25 @@ public class Product {
 
     @Column(nullable = false)
     private boolean preorder;
-    
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate releaseDate;
 
     @Column(nullable = false)
     private Integer stockQuantity;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "subcategory_id")
+    private Subcategory subcategory;
+
+    @ElementCollection(fetch = FetchType.EAGER)
+    @CollectionTable(name = "product_images", joinColumns = @JoinColumn(name = "product_id"))
+    @Column(name = "image_url", columnDefinition = "TEXT")
+    private java.util.List<String> images = new java.util.ArrayList<>();
 
     @Column(nullable = false)
     private Instant createdAt;
@@ -59,6 +79,30 @@ public class Product {
     @PreUpdate
     public void onUpdate() {
         this.updatedAt = Instant.now();
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Subcategory getSubcategory() {
+        return subcategory;
+    }
+
+    public void setSubcategory(Subcategory subcategory) {
+        this.subcategory = subcategory;
+    }
+
+    public java.util.List<String> getImages() {
+        return images;
+    }
+
+    public void setImages(java.util.List<String> images) {
+        this.images = images;
     }
 
     public Long getId() {
